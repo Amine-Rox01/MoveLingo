@@ -1,0 +1,13 @@
+/* Contrast and narrow-screen fixes applied after the design system. */
+:root{--muted:#59675e}
+[data-theme=dark]{--muted:#b0bbaa}
+.feature-grid>*{min-width:0}
+.how-number>span{color:#768963}
+.btn{transition:transform .2s,box-shadow .2s}
+@media(max-width:370px){
+  .compact .demo-person{width:46px;transform:scale(.75)}
+  .compact .conversation{width:75px}
+  .compact .people-row{gap:6px}
+  .compact .speech{font-size:7px}
+  .compact .speech svg{display:none}
+}

@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>MoveLingo browser QA</title><style>body{font:14px Arial;padding:20px;color:#183326;background:#faf9f4}button{padding:12px}iframe{height:900px;border:1px solid #aaa;display:block;margin:20px 0}pre{white-space:pre-wrap;max-width:1200px}.pass{color:green}.fail{color:#a22}</style><h1>MoveLingo browser QA</h1><p>Local development harness. No live AI requests. It uses the authored café example and UI controls.</p><button id="run">Run layout and accessibility audit</button><p id="status">Ready</p><pre id="results"></pre><iframe id="app" title="Website under test" src="/?view=home"></iframe><script>
+const frame=document.querySelector('#app'),status=document.querySelector('#status'),results=document.querySelector('#results');
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(fn){for(let i=0;i<100;i++){if(fn())return;await pause(150)}throw Error('Timed out waiting for UI')}
+const doc=()=>frame.contentDocument;
+const btn=(name)=>[...doc().querySelectorAll('button')].find(b=>(b.getAttribute('aria-label')||b.textContent.trim())===name);
+async function load(view){frame.src='/?view='+view;await new Promise(r=>frame.onload=r);await until(()=>doc().querySelector('.connection-pill')?.textContent!=='Checking AI'&&doc().querySelector('main h1'));await pause(180)}
+async function click(name){const b=btn(name);if(!b)throw Error('Missing control '+name);b.click();await pause(200)}
+async function axe(){const script=doc().createElement('script');script.src='/_qa-axe.js';doc().head.append(script);await new Promise((r,j)=>{script.onload=r;script.onerror=j});return frame.contentWindow.axe.run(doc(),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}})}
+document.querySelector('#run').onclick=async()=>{
+ const report={cases:[],interactions:[],error:null};document.querySelector('#run').disabled=true;
+ try{
+ for(const width of [320,390,1280])for(const theme of ['light','dark'])for(const view of ['home','builder','themes','library','about','lesson']){
+  status.textContent=`Checking ${view}, ${width}px, ${theme}`;frame.style.width=width+'px';await load(view==='lesson'?'home':view);
+  if(doc().documentElement.dataset.theme!==theme)await click(theme==='dark'?'Switch to dark mode':'Switch to light mode');
+  if(view==='lesson'){await click('See a lesson in action');await until(()=>doc().querySelector('#current-stage'))}
+  const root=doc().documentElement;const overflow=root.scrollWidth-root.clientWidth;
+  const offenders=overflow>1?[...doc().querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width&&r.right>root.clientWidth+2&&!e.closest('.table-scroll')}).slice(0,10).map(e=>e.className||e.tagName):[];
+  let violations=[];if(width===390){const r=await axe();violations=r.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary})).slice(0,8)}))}
+  report.cases.push({width,theme,view,overflow,offenders,violations});results.textContent=JSON.stringify(report,null,2);
+ }
+ frame.style.width='1100px';await load('home');await click('See a lesson in action');await click('Start teaching');
+ for(let i=0;i<6;i++){const stage=doc().querySelector('#stage-title').textContent;if(i<5)await click('Complete & next stage');else await click('Complete lesson');report.interactions.push({action:'complete-stage',stage,progress:doc().querySelector('[role=progressbar]').getAttribute('aria-valuenow')})}
+ await click('Save lesson');const nav=[...doc().querySelectorAll('.main-nav a')].find(a=>a.textContent==='My lessons');nav.click();await pause(200);report.interactions.push({action:'save-and-library',cards:doc().querySelectorAll('.saved-card').length});
+ status.textContent='Complete';
+ }catch(e){report.error=e.message;status.textContent='Stopped: '+e.message}
+ results.textContent=JSON.stringify(report,null,2);document.querySelector('#run').disabled=false;
+};
+</script></html>

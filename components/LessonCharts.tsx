@@ -1,0 +1,15 @@
+'use client';
+import { PieChart,Pie,Cell,ResponsiveContainer,AreaChart,Area,XAxis,YAxis,Tooltip,CartesianGrid,BarChart,Bar } from 'recharts';
+import { lessonMetrics,type Lesson } from '@/lib/lesson';
+const colors=['#b7c784','#e8bd87','#6c9e8c','#7e8ba7','#bda7c8','#c99176','#99b7be'];
+export function LessonCharts({lesson}:{lesson:Lesson}){
+ const m=lessonMetrics(lesson);const data=lesson.stages.map((s,i)=>({name:s.phase,short:String(i+1).padStart(2,'0'),minutes:s.minutes,difficulty:s.difficulty}));
+ return <section className="lesson-analytics" aria-label="Lesson planning charts">
+  <div className="analytics-title"><div><span className="eyebrow">AT A GLANCE</span><h2>The shape of your lesson.</h2></div><p>Based on this plan. Talk time and challenge are design estimates, not measured results.</p></div>
+  <div className="chart-grid">
+   <div className="chart-card"><h3>Time, well spent</h3><div className="donut-wrap"><ResponsiveContainer width="100%" height={170}><PieChart><Pie data={data} dataKey="minutes" innerRadius={55} outerRadius={76} paddingAngle={4} stroke="none" isAnimationActive={false}>{data.map((_,i)=><Cell key={i} fill={colors[i]}/>)}</Pie></PieChart></ResponsiveContainer><span className="donut-label"><strong>{m.total}</strong><small>MINUTES</small></span></div><ul className="chart-legend">{data.map((d,i)=><li key={i}><span style={{background:colors[i]}}/>{d.name}<b>{d.minutes}m</b></li>)}</ul></div>
+   <div className="chart-card"><h3>Room for student voice</h3><div className="talk-value">{m.student}<span>%</span></div><p>Estimated student / task time</p><div className="talk-track"><span style={{width:m.student+'%'}}/></div><div className="talk-legend"><span>Students & task {m.student}%</span><span>Teacher {m.teacher}%</span></div><div className="challenge"><h3>A gradual challenge</h3><ResponsiveContainer width="100%" height={115}><AreaChart data={data} margin={{left:-30,right:8,top:12,bottom:0}}><CartesianGrid strokeDasharray="3 3" vertical={false}/><XAxis dataKey="short" tick={{fontSize:11}} axisLine={false} tickLine={false}/><YAxis domain={[1,5]} ticks={[1,3,5]} tick={{fontSize:11}} axisLine={false} tickLine={false}/><Tooltip/><Area type="monotone" dataKey="difficulty" stroke="#427a67" fill="#b7c784" fillOpacity={.3} isAnimationActive={false}/></AreaChart></ResponsiveContainer><p className="tiny">Challenge 1–5 · stages 01–{String(data.length).padStart(2,'0')}</p><details><summary>Read chart values</summary>{data.map((d,i)=><p key={i}>{d.name}: {d.difficulty}/5</p>)}</details></div></div>
+   <div className="chart-card"><h3>Skills in practice</h3><p>Minutes in stages that include each skill; stages may practise more than one.</p><div className="skill-bars">{m.skills.map(x=><div key={x.name}><div><span>{x.name}</span><b>{x.minutes}m</b></div><div className="skill-track"><span style={{width:x.minutes/m.total*100+'%'}}/></div></div>)}</div><div className="coverage-note"><span className="small-check">✓</span><p>Check the stage aims and exit task against your objective before teaching.</p></div></div>
+  </div>
+ </section>
+}

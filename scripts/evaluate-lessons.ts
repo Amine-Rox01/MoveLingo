@@ -1,0 +1,14 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {showcaseLessons} from '../lib/showcase';
+import {moroccoThemes} from '../lib/morocco-themes';
+import {parseLesson} from '../lib/lesson';
+import {validateMovementPlan} from '../lib/movement';
+import {lessonReview} from '../lib/quality';
+import {taskScenes} from '../lib/task-scenes';
+import {offlinePack} from '../lib/offline-pack';
+const lessons=[...showcaseLessons.map(x=>x.lesson),...moroccoThemes.map(x=>x.lesson)];
+const results=lessons.map(lesson=>{parseLesson(lesson);validateMovementPlan(lesson);const tasks=lesson.stages.filter(s=>s.approach==='Task-based');if(tasks.some(s=>!s.taskScene||!taskScenes[s.taskScene]))throw new Error('Missing task schematic: '+lesson.title);return {id:lesson.id,title:lesson.title,minutes:lesson.stages.reduce((n,s)=>n+s.minutes,0),structure:'pass',movementFields:'present',taskVisual:'assigned',teacherReviewPrompts:lessonReview(lesson,lesson.setup),independentEducatorReview:'not established',classroomEffectiveness:'not established'};});
+await mkdir('outputs',{recursive:true});await mkdir('public/conference-kit',{recursive:true});
+for(const {lesson} of showcaseLessons)await writeFile(`public/conference-kit/${lesson.id}-offline.html`,offlinePack(lesson),'utf8');
+await writeFile('outputs/technical-lesson-review.json',JSON.stringify({generatedAt:new Date().toISOString(),scope:'Authored content structure and presence checks; not a pedagogical or safety certification and not classroom evidence',lessons:results},null,2));
+console.log(`Validated ${results.length} authored lessons and exported 3 self-contained offline teacher packs. Independent reviews and classroom results remain unestablished.`);

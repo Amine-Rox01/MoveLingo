@@ -1,0 +1,308 @@
+{
+  "title": "Robot Navigator: Precision in Motion",
+  "summary": "An interactive lesson where students practice giving and following movement-based directions to navigate a classroom grid, emphasizing clear communication and collaborative teamwork.",
+  "languageFocus": [
+    "Imperative verbs: Go, Turn, Stop",
+    "Confirmation questions: Is this the right place? Yes, it is."
+  ],
+  "successCriteria": [
+    "Students can successfully execute a sequence of three directions.",
+    "Students can confirm the final location using the provided target language."
+  ],
+  "stages": [
+    {
+      "title": "Warm-up: Robot Mechanics",
+      "phase": "Warm-up",
+      "minutes": 8,
+      "aim": "To activate vocabulary through whole-body movement.",
+      "description": "Students follow teacher commands to mimic robotic movements.",
+      "interaction": "Whole class",
+      "teacherRole": [
+        "Model the robotic movements clearly while standing in front.",
+        "Ensure all students maintain safe personal space."
+      ],
+      "studentRole": [
+        "Listen to the command and execute the slow-motion movement.",
+        "Return to neutral position after each movement."
+      ],
+      "instructions": "Listen to me. When I say 'Go forward', take one step. When I say 'Turn left', rotate your body left. Keep your movements slow and robotic.",
+      "steps": [
+        "1. Teacher demonstrates 'Go forward' and 'Turn left' at a slow pace (2 mins).",
+        "2. Teacher leads the class through a sequence of four movements (3 mins).",
+        "3. Students practice in pairs; one gives a simple command, the other acts it out (3 mins)."
+      ],
+      "materials": [
+        {
+          "name": "Directional Cues",
+          "content": "Go forward. Turn left. Stop at the cone."
+        }
+      ],
+      "expectedOutput": "Students correctly matching the command with the corresponding 90-degree turn or forward step.",
+      "check": "Teacher observes correct directional response. Criterion: 80% accuracy in movement direction.",
+      "adaptation": "Seated students perform the movements using arm gestures; forward reach for 'Go', arm swing for 'Turn'.",
+      "why": "Physical reinforcement of directional verbs improves retention through multisensory association.",
+      "sourceQuotes": [
+        "Go forward. Turn left. Stop at the cone."
+      ],
+      "motion": {
+        "kind": "sequence",
+        "labels": [
+          "Robot Warm-up",
+          "Directional Drill"
+        ],
+        "beats": [
+          "Teacher signals a command with a verbal cue.",
+          "Students perform a slow, controlled robotic movement.",
+          "Students pause in a neutral pose to await the next signal."
+        ]
+      },
+      "teacherTalkPercent": 30,
+      "difficulty": 1,
+      "skills": [
+        "Vocabulary",
+        "Speaking"
+      ],
+      "approach": "TPR",
+      "movement": "Students stand in a clear space. The teacher acts as the master programmer, calling out 'Go forward', 'Turn left', or 'Turn right'. Students move one step in the direction, maintaining rigid, robotic posture. Seated students use hand-and-arm gestures to mimic the same cardinal movements.",
+      "peGoal": "Coordination and spatial awareness through controlled, slow-motion movement.",
+      "safety": "Keep at least one arm's length from all peers. Stop immediately when the teacher raises a hand.",
+      "visualActivityId": "preview_commands"
+    },
+    {
+      "title": "Presentation: The Navigator's Grid",
+      "phase": "Presentation",
+      "minutes": 7,
+      "aim": "To introduce the target language in a functional context.",
+      "description": "Teacher models the dialogue using a floor grid.",
+      "interaction": "Whole class",
+      "teacherRole": [
+        "Place paper markers on the floor to form a 3x3 grid.",
+        "Demonstrate the full dialogue with a student volunteer."
+      ],
+      "studentRole": [
+        "Watch the demonstration.",
+        "Practice the target phrases choral-style with the teacher."
+      ],
+      "instructions": "Watch and listen. When you arrive at the marker, ask: 'Is this the right place?' Your partner answers: 'Yes, it is.'",
+      "steps": [
+        "1. Teacher sets up markers (1 min).",
+        "2. Teacher models the dialogue: 'Go forward. Turn left. Stop at the cone. Is this the right place? Yes, it is.' (3 mins).",
+        "3. Students repeat phrases chorally (3 mins)."
+      ],
+      "materials": [
+        {
+          "name": "Dialogue Script",
+          "content": "Go forward. Turn left. Stop at the cone. Is this the right place? Yes, it is."
+        }
+      ],
+      "expectedOutput": "Students correctly reciting the dialogue with clear pronunciation.",
+      "check": "Choral repetition accuracy.",
+      "adaptation": "Provide visual prompt cards for students who struggle with auditory memory.",
+      "why": "Using the dialogue in a model path creates a bridge between theory and physical application.",
+      "sourceQuotes": [
+        "Go forward. Turn left. Stop at the cone. Is this the right place? Yes, it is."
+      ],
+      "motion": {
+        "kind": "listen",
+        "labels": [
+          "Dialogue Mapping",
+          "Choral Drill"
+        ],
+        "beats": [
+          "Teacher points to each physical marker while speaking.",
+          "Students move along the path tracing the teacher's steps.",
+          "Students repeat the confirmation question together."
+        ]
+      },
+      "teacherTalkPercent": 40,
+      "difficulty": 2,
+      "skills": [
+        "Speaking",
+        "Functions",
+        "Pronunciation"
+      ],
+      "approach": "Reflection",
+      "movement": "Students walk slowly to follow a model path mapped on the floor with paper markers.",
+      "peGoal": "Teamwork and spatial orientation.",
+      "safety": "Walk slowly; maintain social distancing in the grid area.",
+      "visualActivityId": "grid"
+    },
+    {
+      "title": "Controlled Practice: Path Construction",
+      "phase": "Controlled practice",
+      "minutes": 10,
+      "aim": "To rehearse the language in pairs before the main task.",
+      "description": "Pairs practice giving directions on paper grids before moving to the floor.",
+      "interaction": "Pairs",
+      "teacherRole": [
+        "Monitor pairs and provide language support.",
+        "Ensure every student has a role: Programmer or Robot."
+      ],
+      "studentRole": [
+        "Programmer writes a route on paper.",
+        "Robot follows the instructions using a token."
+      ],
+      "instructions": "Work in pairs. The programmer writes down three steps. The robot moves the token. Then, check the result together.",
+      "steps": [
+        "1. Pairs are formed (1 min).",
+        "2. Programmers write down a 3-step route (4 mins).",
+        "3. Robots follow the route; pairs swap roles (5 mins)."
+      ],
+      "materials": [
+        {
+          "name": "Grid Worksheet",
+          "content": "A 4x4 grid drawn on paper."
+        }
+      ],
+      "expectedOutput": "Correct completion of paper routes and use of target phrases.",
+      "check": "Pairs verify their final position against the written plan.",
+      "adaptation": "Use high-contrast markers for visually impaired students; provide sentence starters for lower-level learners.",
+      "why": "This rehearsal stage ensures confidence before the higher-stakes physical task.",
+      "sourceQuotes": [
+        "Go forward. Turn left. Stop at the cone."
+      ],
+      "motion": {
+        "kind": "cards",
+        "labels": [
+          "Grid Planning",
+          "Token Movement"
+        ],
+        "beats": [
+          "Programmer draws a path using three arrows.",
+          "Robot places the token at the start marker.",
+          "Robot moves the token step-by-step based on instructions."
+        ]
+      },
+      "teacherTalkPercent": 10,
+      "difficulty": 2,
+      "skills": [
+        "Functions",
+        "Writing",
+        "Speaking"
+      ],
+      "approach": "Reflection",
+      "movement": "Students use hands to move a token on a desk-sized grid to prepare for floor navigation.",
+      "peGoal": "Fine motor coordination and peer cooperation.",
+      "safety": "Keep tokens on the table; seated activity.",
+      "visualActivityId": "maze"
+    },
+    {
+      "title": "Task: The Hidden Destination",
+      "phase": "Purposeful production",
+      "minutes": 15,
+      "aim": "To use directions to reach a hidden, secret destination.",
+      "description": "The 'programmer' guides the 'robot' to a hidden spot marked by a concealed card.",
+      "interaction": "Pairs",
+      "teacherRole": [
+        "Act as a facilitator, distributing secret destination cards.",
+        "Observe for usage of target language."
+      ],
+      "studentRole": [
+        "Programmer: Read the secret route aloud.",
+        "Robot: Move to the destination marked on the floor grid."
+      ],
+      "instructions": "Programmer, tell your partner the route. Robot, move carefully. When you stop, ask: 'Is this the right place?'",
+      "steps": [
+        "1. Distribute secret destination cards (2 mins).",
+        "2. Pairs conduct the navigation (8 mins).",
+        "3. Pairs swap and attempt a new destination (5 mins)."
+      ],
+      "materials": [
+        {
+          "name": "Secret Route Cards",
+          "content": "Secret Destination 1: Forward 2, Left 1. Secret Destination 2: Forward 1, Right 2."
+        }
+      ],
+      "expectedOutput": "The robot reaches the correct marker corresponding to the programmer's route.",
+      "check": "Check if the robot reaches the destination card. Success criteria: Did you reach the target?",
+      "adaptation": "For mobility access, the robot remains seated and moves a token on a tabletop version of the grid.",
+      "why": "This task creates a 'true gap' where the robot doesn't know the destination, requiring reliance on language.",
+      "sourceQuotes": [
+        "Go forward. Turn left. Stop at the cone. Is this the right place? Yes, it is."
+      ],
+      "motion": {
+        "kind": "move",
+        "labels": [
+          "Route Giving",
+          "Navigation",
+          "Verification"
+        ],
+        "beats": [
+          "Programmer reads the secret instruction.",
+          "Robot walks through the grid steps.",
+          "Robot stops at the final marker and asks for confirmation."
+        ]
+      },
+      "teacherTalkPercent": 10,
+      "difficulty": 4,
+      "skills": [
+        "Functions",
+        "Speaking",
+        "Listening"
+      ],
+      "approach": "Task-based",
+      "movement": "The 'robot' (student) walks along the floor-grid markers based on the secret directions provided by the 'programmer'. The programmer holds a hidden map. The robot must navigate to the destination to reveal the secret marker.",
+      "peGoal": "Spatial awareness and collaborative navigation.",
+      "safety": "Students move at walking speed only; one pair per path at a time to prevent collisions.",
+      "visualActivityId": "robot"
+    },
+    {
+      "title": "Assessment & Reflection",
+      "phase": "Assessment",
+      "minutes": 10,
+      "aim": "To evaluate achievement and reflect on communication strategies.",
+      "description": "Pairs reflect on their success and give feedback.",
+      "interaction": "Whole class",
+      "teacherRole": [
+        "Facilitate a brief group discussion on successful navigation.",
+        "Check completion of the task."
+      ],
+      "studentRole": [
+        "Discuss with partner: Was the route easy to follow?",
+        "Provide feedback on communication clarity."
+      ],
+      "instructions": "Talk to your partner. Was the route easy? Say one thing you did well.",
+      "steps": [
+        "1. Students return to seats (2 mins).",
+        "2. Peer feedback discussion (5 mins).",
+        "3. Teacher summarises effective usage of target language (3 mins)."
+      ],
+      "materials": [
+        {
+          "name": "Reflection Prompt",
+          "content": "What helped you find the destination?"
+        }
+      ],
+      "expectedOutput": "Students reflecting on their use of 'Go forward', 'Turn left', and 'Stop'.",
+      "check": "Observation of pair discussion. Criterion: Using at least two pieces of target vocabulary in their feedback.",
+      "adaptation": "Use sentence frames like 'The directions were...' for students needing additional scaffolding.",
+      "why": "Reflection consolidates learning and encourages metacognition regarding language precision.",
+      "sourceQuotes": [
+        "Go forward. Turn left. Stop at the cone."
+      ],
+      "motion": {
+        "kind": "circle",
+        "labels": [
+          "Cool Down",
+          "Peer Review"
+        ],
+        "beats": [
+          "Students walk slowly to their desks.",
+          "Pairs discuss their performance.",
+          "Teacher highlights successful examples of target language."
+        ]
+      },
+      "teacherTalkPercent": 20,
+      "difficulty": 3,
+      "skills": [
+        "Speaking",
+        "Functions"
+      ],
+      "approach": "Reflection",
+      "movement": "Slow, quiet return to desks to allow for physiological recovery.",
+      "peGoal": "Fair play and team evaluation.",
+      "safety": "Ensure all floor markers are collected; no running.",
+      "visualActivityId": ""
+    }
+  ]
+}

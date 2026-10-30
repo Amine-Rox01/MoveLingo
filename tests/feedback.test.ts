@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {build} from 'esbuild';
+import {mkdir} from 'node:fs/promises';
+const dir=new URL('../work/tests/',import.meta.url);await mkdir(dir,{recursive:true});const target=new URL('feedback-route.mjs',dir);
+await build({entryPoints:['app/api/feedback/route.ts'],bundle:true,platform:'node',format:'esm',outfile:target.pathname.replace(/^\/([A-Z]:)/,'$1'),plugins:[{name:'test-worker-env',setup(b){b.onResolve({filter:/^cloudflare:workers$/},()=>({path:'env',namespace:'test-env'}));b.onLoad({filter:/.*/,namespace:'test-env'},()=>({contents:'export const env={GEMINI_API_KEY:"TEST_FIXTURE_NOT_A_SECRET"};'}))}}],logLevel:'silent'});
+const {POST}=await import(target.href);const original=globalThis.fetch;
+const input={context:'Directions and navigation',classNotes:'Most students used left correctly.',teacherNotes:'Instructions took longer than planned.',students:[{label:'Student A',notes:'Used turn left while walking slowly.'}]};
+const result={students:[{label:'Student A',strength:'Used turn left.',nextStep:'Try turn right.',message:'Good work!'}],classFeedback:{strength:'Used left.',nextStep:'Practise right.',message:'Keep practising.'},teacherFeedback:{observations:'Instructions took time.',nextStep:'Demonstrate briefly.'}};
+const req=(body:unknown,headers:Record<string,string>={})=>new Request('https://example.test/api/feedback',{method:'POST',headers:{origin:'https://example.test','content-type':'application/json','oai-authenticated-user-id':crypto.randomUUID(),...headers},body:JSON.stringify(body)});
+const output=(v:unknown)=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify(v)}]}}]});
+test('feedback uses supplied observations and requires the same anonymous learner labels',async()=>{let sent:any;globalThis.fetch=async(_url,options)=>{sent=JSON.parse(String(options?.body));return output(result)};try{const r=await POST(req(input));assert.equal(r.status,200);assert.deepEqual(JSON.parse(sent.contents[0].parts[0].text),input);assert.match(sent.systemInstruction.parts[0].text,/never invent/i);globalThis.fetch=async()=>output({...result,students:[{...result.students[0],label:'Other'}]});assert.equal((await POST(req(input))).status,502)}finally{globalThis.fetch=original}});
+test('feedback rejects unauthorized origins, missing identity, duplicate labels and provider errors',async()=>{let calls=0;globalThis.fetch=async()=>{calls++;return new Response('',{status:429})};try{assert.equal((await POST(req(input,{origin:'https://else.test'}))).status,403);assert.equal((await POST(req(input,{'oai-authenticated-user-id':''}))).status,401);assert.equal((await POST(req({...input,students:[input.students[0],input.students[0]]}))).status,400);assert.equal(calls,0);assert.equal((await POST(req(input))).status,502)}finally{globalThis.fetch=original}});
+test('class-only feedback returns no invented learner and non-observable traits are replaced with supplied evidence',async()=>{
+ try{globalThis.fetch=async()=>output({...result,students:[]});const classOnly=await POST(req({...input,students:[],classSize:24,observedLearners:0}));assert.equal(classOnly.status,200);assert.deepEqual((await classOnly.json() as any).feedback.students,[]);
+ globalThis.fetch=async()=>output({...result,students:[{...result.students[0],strength:'Showed willingness and motivation.'}]});const r=await POST(req(input));const f=(await r.json() as any).feedback.students[0];assert.equal(f.evidence,input.students[0].notes);assert.ok(!f.strength.includes('willingness'));assert.ok(f.strength.includes(input.students[0].notes));
+ }finally{globalThis.fetch=original}
+});

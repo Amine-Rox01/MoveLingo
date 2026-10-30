@@ -1,0 +1,972 @@
+{
+  "generatedAt": "2026-10-29T22:47:05.131Z",
+  "scope": "Authored content structure and presence checks; not a pedagogical or safety certification and not classroom evidence",
+  "lessons": [
+    {
+      "id": "showcase-route",
+      "title": "Let’s Celebrate! — Sports day: guide the visitor",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": true,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "showcase-coach",
+      "title": "Join the Club! — Listen, check and coach",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": true,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "showcase-story",
+      "title": "Tell Me About Your Summer! — A summer story in four scenes",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": true,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-01",
+      "title": "Tell Me About Your Summer! — Summer memory trail",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-02",
+      "title": "Tell Me About Your Summer! — Holiday listening detectives",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-03",
+      "title": "Tell Me About Your Summer! — Past-tense action gallery",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-04",
+      "title": "Tell Me About Your Summer! — A postcard in four moves",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-05",
+      "title": "Join the Club! — Find your school club",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-06",
+      "title": "Join the Club! — Club experience interviews",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-07",
+      "title": "Join the Club! — Build an inclusive team",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-08",
+      "title": "Join the Club! — Spend the club budget",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-09",
+      "title": "Let’s Celebrate! — Invite a friend to sports day",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-10",
+      "title": "Let’s Celebrate! — Plan a celebration together",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-11",
+      "title": "Let’s Celebrate! — Celebration listening route",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-12",
+      "title": "Let’s Celebrate! — Write an event invitation",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-13",
+      "title": "They Changed the World! — Invention clue trail",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-14",
+      "title": "They Changed the World! — Inventor interview studio",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-15",
+      "title": "They Changed the World! — Then and now in motion",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-16",
+      "title": "They Changed the World! — Design a useful invention",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-17",
+      "title": "The Future Is Ours! — Future careers interview",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-18",
+      "title": "The Future Is Ours! — Our next team challenge",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-19",
+      "title": "The Future Is Ours! — Read our future-choice survey",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    },
+    {
+      "id": "ma3-20",
+      "title": "The Future Is Ours! — A goal and a next step",
+      "minutes": 50,
+      "structure": "pass",
+      "movementFields": "present",
+      "taskVisual": "assigned",
+      "teacherReviewPrompts": [
+        {
+          "label": "English goal is explicit",
+          "present": true,
+          "question": "Can a learner demonstrate this outcome without relying on athletic ability?"
+        },
+        {
+          "label": "Physical criterion is supplied",
+          "present": true,
+          "question": "What controlled movement or cooperation will you actually observe, using the agreed adaptation?"
+        },
+        {
+          "label": "Usable layout is specified",
+          "present": false,
+          "question": "Will the active groups and role rotations fit the real space, with a stop signal and an equivalent access option?"
+        },
+        {
+          "label": "A communicative task is identified",
+          "present": true,
+          "question": "Is there genuinely missing information, a choice or a problem, and a checkable shared outcome?"
+        },
+        {
+          "label": "Task materials are separated",
+          "present": true,
+          "question": "Can you distribute the actual private cards without revealing the answer or writing missing content?"
+        },
+        {
+          "label": "Task-specific visual is assigned",
+          "present": true,
+          "question": "Does the visual show the same roles, objects, action order and outcome as this task? A library picture alone does not verify this."
+        }
+      ],
+      "independentEducatorReview": "not established",
+      "classroomEffectiveness": "not established"
+    }
+  ]
+}

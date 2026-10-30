@@ -1,0 +1,25 @@
+'use client';
+import {useEffect,useState} from 'react';
+import {Play,Pause,ChevronLeft,ChevronRight,MessageCircle} from 'lucide-react';
+import type {Stage,Setup} from '@/lib/lesson';
+import {useReducedMotion} from 'framer-motion';
+import {lessonPhoto} from '@/lib/lesson-visuals';
+import {movementActivities} from '@/lib/movement';
+import {matchStageActivity} from '@/lib/visual-match';
+import ActivityMotionPlayer from './ActivityMotionPlayer';
+import StageStoryboard from './StageStoryboard';
+import TaskDemonstration from './TaskDemonstration';
+function plain(s:string){return s.replace(/^\s*\d+[.)]\s*/, '').trim()}
+export default function LessonVisual({stage,setup,activityId,setVisual,learnerView=false}:{stage:Stage;learnerView?:boolean;setup?:Setup;activityId:string;setVisual:(id:string)=>void}){
+ const [step,setStep]=useState(0);const [playing,setPlaying]=useState(false);const [showInstructions,setShowInstructions]=useState(false);
+ const steps=stage.steps.length?stage.steps:stage.motion.beats;const matchedId=matchStageActivity(stage,activityId);const activity=movementActivities.find(a=>a.id===matchedId);const photo=lessonPhoto(setup);const reduced=useReducedMotion();
+ useEffect(()=>{setStep(0);setPlaying(!activity&&!reduced);setShowInstructions(false);},[stage.title,activity?.id,reduced]);
+ useEffect(()=>{if(!playing||reduced||steps.length<2)return;const id=setInterval(()=>setStep(i=>(i+1)%steps.length),7000);return()=>clearInterval(id)},[playing,reduced,steps.length]);
+ const goto=(i:number)=>{setPlaying(false);setStep((i+steps.length)%steps.length)};
+ return <section className="lesson-visual" aria-label={`Visual guide for ${stage.title}`}><div className="lesson-context-photo"><img src={photo.src} alt={photo.alt} width={1200} height={800} loading="lazy"/><div><span className="eyebrow">{setup?.theme||'ENGLISH IN ACTION'}</span><strong>{setup?.topic||stage.title}</strong><small>{photo.generated?'AI-created unit scene':'Classroom context · stock photo'}</small></div></div><div className="lesson-visual-header"><div><span className="eyebrow">VISUAL ACTIVITY GUIDE</span><h3>{stage.title}</h3><p>{activity?`Watch: ${activity.name}`:'Explore the illustrated procedure below'}</p></div><span className="lesson-visual-counter">{step+1} / {steps.length}</span></div>
+ <div className="visual-choice"><label htmlFor="lesson-image-choice">Activity animation for this stage</label><select id="lesson-image-choice" value={matchedId} onChange={e=>{setVisual(e.target.value);}}><option value="">Choose an activity animation</option>{movementActivities.map(a=><option value={a.id} key={a.id}>{a.name}</option>)}</select><small>The animation should match this stage’s movement task. Choose another if needed.</small></div>
+ <div className="lesson-visual-body with-motion-player"><div className="lesson-visual-scene">{activity?<ActivityMotionPlayer key={activity.id} activity={activity}/>:stage.taskScene?<TaskDemonstration id={stage.taskScene} learnerView={learnerView} playing={playing}/>:<StageStoryboard stage={stage} setup={setup} step={step} playing={playing} onReplay={()=>{setStep(0);setPlaying(true)}}/>}</div><div className="lesson-visual-action"><span className="eyebrow">PROCEDURE · STEP {step+1}</span><p key={step} className="lesson-action-text">{plain(steps[step]||'')}</p><div className="lesson-step-progress">{steps.map((_,i)=><button key={i} type="button" className={step===i?'active':''} aria-label={`Go to procedure step ${i+1}`} aria-pressed={step===i} onClick={()=>goto(i)}>{i+1}</button>)}</div><div className="lesson-player"><button type="button" aria-label="Previous procedure step" onClick={()=>goto(step-1)}><ChevronLeft size={18}/></button><button type="button" className="lesson-play" aria-label={playing?'Pause procedure steps':'Automatically advance procedure steps'} onClick={()=>setPlaying(p=>!p)}>{playing?<Pause size={17}/>:<Play size={17}/>} {playing?'Pause steps':'Auto steps'}</button><button type="button" aria-label="Next procedure step" onClick={()=>goto(step+1)}><ChevronRight size={18}/></button></div></div></div>
+ {activity&&stage.taskScene&&<details className="lesson-task-details"><summary>Show this lesson’s task diagram</summary><TaskDemonstration id={stage.taskScene} learnerView={learnerView} playing={playing}/></details>}
+ <button type="button" className="lesson-script-toggle" aria-expanded={showInstructions} onClick={()=>setShowInstructions(!showInstructions)}><MessageCircle size={17}/> {showInstructions?'Hide teacher instructions':'Show what to say to learners'}</button>{showInstructions&&<blockquote className="lesson-visual-script">“{stage.instructions}”</blockquote>}
+ <p className="lesson-visual-disclaimer">{activity?'Library reference demonstration: compare its mechanics with this lesson before modelling it.':stage.taskScene?'Task-specific schematic based on the supplied cards. Teacher review is required before use.':'General illustration of the stage interaction. Use the actual task cards and procedure for details.'}</p></section>
+}
